@@ -1,1 +1,272 @@
-/* Compile your LESS file! */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+  margin: 3%;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/* Set every element's box-sizing to border-box */
+* {
+  box-sizing: border-box;
+  max-width: 100%;
+}
+html,
+body {
+  height: 100%;
+  font-size: 1.2rem;
+}
+p {
+  font-family: 'Saira Semi Condensed', sans-serif;
+}
+h1,
+h2,
+h3 {
+  font-family: 'Oswald', sans-serif;
+}
+h2 {
+  font-size: 1.6rem;
+}
+h3 {
+  font-size: 1.5rem;
+}
+header {
+  background-color: lightgrey;
+  padding-bottom: 2%;
+}
+header .header-top {
+  display: flex;
+}
+@media (max-width: 500px) {
+  header .header-top {
+    display: flex;
+    flex-direction: column;
+  }
+}
+header .header-top .profile-img {
+  width: 50%;
+}
+@media (max-width: 500px) {
+  header .header-top .profile-img {
+    width: 100%;
+  }
+}
+header .header-top h1 {
+  width: 50%;
+  font-size: 10vh;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@media (max-width: 500px) {
+  header .header-top h1 {
+    font-size: 5vh;
+    width: 100%;
+    padding-bottom: 3%;
+  }
+}
+header .header-bottom {
+  margin: 2% 0 2% 0;
+}
+header .header-bottom .links {
+  margin-top: 2%;
+  display: flex;
+  justify-content: space-evenly;
+}
+@media (max-width: 500px) {
+  header .header-bottom .links {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+}
+header .header-bottom .links a {
+  text-decoration: none;
+  color: black;
+  border: 1px solid black;
+  background-color: slategrey;
+  border-radius: 5%;
+  padding: 1% 3% 1% 3%;
+}
+header .header-bottom .links a:hover {
+  color: #1ca3a3;
+  background-color: lightslategray;
+}
+.first-section {
+  margin-top: 2%;
+  display: flex;
+  justify-content: space-between;
+}
+@media (max-width: 500px) {
+  .first-section {
+    display: flex;
+    flex-direction: column;
+  }
+}
+.first-section .about-me {
+  width: 49%;
+}
+@media (max-width: 500px) {
+  .first-section .about-me {
+    width: 100%;
+  }
+}
+.first-section .about-me h3 {
+  margin-bottom: 2%;
+}
+.first-section .hobbies {
+  width: 49%;
+}
+@media (max-width: 500px) {
+  .first-section .hobbies {
+    width: 100%;
+    margin: 4% 0;
+  }
+}
+.first-section .hobbies ul {
+  margin-top: 2%;
+  display: flex;
+  flex-direction: column;
+}
+.first-section .hobbies ul li {
+  padding: 2% 0 0 3%;
+  border: 1px solid lightgrey;
+}
+.second-section {
+  Margin-top: 2%;
+}
+.second-section h3 {
+  padding: 2% 0;
+}
+.second-section .first-tr {
+  font-weight: bold;
+}
+.second-section tr td {
+  width: 10%;
+  padding: 1%;
+}
+footer {
+  text-align: center;
+  margin: 3% 0;
+}
