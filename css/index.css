@@ -153,12 +153,24 @@ h3 {
 }
 header {
   background-color: lightgrey;
+  padding-bottom: 2%;
 }
 header .header-top {
   display: flex;
 }
+@media (max-width: 500px) {
+  header .header-top {
+    display: flex;
+    flex-direction: column;
+  }
+}
 header .header-top .profile-img {
   width: 50%;
+}
+@media (max-width: 500px) {
+  header .header-top .profile-img {
+    width: 100%;
+  }
 }
 header .header-top h1 {
   width: 50%;
@@ -167,6 +179,13 @@ header .header-top h1 {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+@media (max-width: 500px) {
+  header .header-top h1 {
+    font-size: 5vh;
+    width: 100%;
+    padding-bottom: 3%;
+  }
 }
 header .header-bottom {
   margin: 2% 0 2% 0;
@@ -185,7 +204,7 @@ header .header-bottom .links a {
   padding: 1% 3% 1% 3%;
 }
 header .header-bottom .links a:hover {
-  color: darkgrey;
+  color: #1ca3a3;
   background-color: lightslategray;
 }
 .first-section {
@@ -210,4 +229,21 @@ header .header-bottom .links a:hover {
 .first-section .hobbies ul li {
   padding: 2% 0 0 3%;
   border: 1px solid lightgrey;
+}
+.second-section {
+  Margin-top: 2%;
+}
+.second-section h3 {
+  padding: 2% 0;
+}
+.second-section .first-tr {
+  font-weight: bold;
+}
+.second-section tr td {
+  width: 10%;
+  padding: 1%;
+}
+footer {
+  text-align: center;
+  margin: 3% 0;
 }

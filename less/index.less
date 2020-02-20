@@ -51,8 +51,8 @@ table {
 /* Set every element's box-sizing to border-box */
 * {
 	box-sizing: border-box;
-	max-width:100%;
-	border:1px solid pink;	
+	max-width:100%;	
+	border:1px solid pink;
 }
 
 html, body {
@@ -77,12 +77,21 @@ h3{
 // Header styling
 header{
 	background-color: lightgrey;
-
+	padding-bottom:2%;
 	.header-top{
 		display: flex;
 
+		@media(max-width:500px){
+			display: flex;
+			flex-direction: column;
+		}
+
 			.profile-img{
 				width:50%;
+
+				@media(max-width:500px){
+					width:100%;
+				}
 			}
 			h1{
 				width:50%;
@@ -91,6 +100,12 @@ header{
 				display:flex;
 				justify-content: center;
 				align-items: center;
+
+				@media(max-width:500px) {
+					font-size:5vh;
+					width:100%;
+					padding-bottom:3%;
+				}
 			}// this is h1
 	}//this is header-top
 	.header-bottom{
@@ -110,13 +125,14 @@ header{
 						padding: 1% 3% 1% 3%;
 
 							&:hover{
-								color:darkgrey;
+								color: rgb(28, 163, 163);
 								background-color:lightslategray;
 							}
 					}
 			}//this is .links
 	}//this is .header-bottom
 }//this is header
+
 
 //first section styling
 .first-section{
@@ -146,3 +162,29 @@ header{
 		
 	}//this is .hobbies
 }//this is .first-section
+
+
+//second section styling
+.second-section{
+	Margin-top: 2%;
+
+	h3{
+		padding:2% 0;
+	}
+	.first-tr{
+		font-weight: bold;
+	}//this is .first-tr
+	tr{
+		
+		td{
+			width: 10%;
+			padding:1%;
+		}
+	}//this is tr
+}//this is .second-section
+
+//footer styling
+footer{
+	text-align: center;
+	margin:3% 0;
+}
